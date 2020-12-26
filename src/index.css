@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.maket {
+    width: 500px;
+}
