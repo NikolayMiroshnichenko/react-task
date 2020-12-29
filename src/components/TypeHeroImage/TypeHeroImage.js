@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./HeroImage.module.css";
+import style from "./TypeHeroImage.module.css";
 
-const HeroImage = ({ item }) => {
+const TypeHeroImage = ({ item }) => {
   return (
     <div className={style.container}>
       <img src={item.imageURI} width="300" alt={item.type} />
@@ -9,4 +9,4 @@ const HeroImage = ({ item }) => {
   );
 };
 
-export default HeroImage;
+export default TypeHeroImage;

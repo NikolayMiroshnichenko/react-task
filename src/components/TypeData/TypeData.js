@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
-import styles from "./Data.module.css";
+import styles from "./TypeData.module.css";
 
-const Data = ({ item }) => {
+const TypeData = ({ item }) => {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch(item.url)
-      .then((res) => res.json())
-      .then((data) => {
-        setText(JSON.stringify(data));
-      })
-      .catch((err) => setText('Помилка під час завантаження!'));
+    fetchUpdate();
   }, []);
 
   const fetchUpdate = () => {
@@ -34,4 +29,4 @@ const Data = ({ item }) => {
   );
 };
 
-export default Data;
+export default TypeData;

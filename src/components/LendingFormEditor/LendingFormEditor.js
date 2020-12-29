@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./Editor.module.css";
-import isJson from "../../helpers/isJson";
+import styles from "./LendingFormEditor.module.css";
+import isJson from "../../helpers/is-json";
 
-export default function Editor({submit}) {
-  const [string, setString] = useState('[]');
+export default function LendingFormEditor({ submit }) {
+  const [string, setString] = useState("[]");
 
   const hendleOnchenge = (e) => {
     setString(e.target.value);
@@ -12,7 +12,8 @@ export default function Editor({submit}) {
   const hendleSubmit = (e) => {
     e.preventDefault();
     const task = isJson(string);
-    if(!task) return;
+    
+    if (!task) return;
     submit(task);
   };
 
@@ -25,7 +26,7 @@ export default function Editor({submit}) {
           value={string}
           onChange={hendleOnchenge}
           className={styles.input}
-        ></textarea>
+        />
         <button type="submit" className={styles.btn}>
           SEND
         </button>
@@ -33,4 +34,3 @@ export default function Editor({submit}) {
     </div>
   );
 }
-

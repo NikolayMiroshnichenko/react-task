@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./ImageText.module.css";
+import style from "./TypeImageText.module.css";
 
-const ImageText = ({ item }) => {
+const TypeImageText = ({ item }) => {
   return (
     <div className={style.block}>
       <div
@@ -19,4 +19,4 @@ const ImageText = ({ item }) => {
   );
 }
 
-export default ImageText;
+export default TypeImageText;

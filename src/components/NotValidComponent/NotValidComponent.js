@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./DefaultComponent.module.css";
+import styles from "./NotValidComponent.module.css";
 
-const DefaultComponent = ({ item }) => (
+const NotValidComponent = ({ item }) => (
   <div className={styles.container}>
     <p>{`Тип "${item.type}" не підтримуеться!`}</p>
   </div>
 );
 
-export default DefaultComponent;
+export default NotValidComponent;
